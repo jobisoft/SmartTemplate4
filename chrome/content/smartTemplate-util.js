@@ -468,8 +468,9 @@ SmartTemplate4.Util = {
 			notifyBox = gNotification.notificationbox;
 		}
 		else {
-			let notificationId;
-      if (window.location.toString().endsWith("messengercompose.xul"))
+			let notificationId,
+          docLocation = window.location.toString();
+      if (docLocation.endsWith("messengercompose.xhtml") || docLocation.endsWith("messengercompose.xul"))
         notificationId = 'attachmentNotificationBox';
       else
         notificationId = 'mail-notification-box';

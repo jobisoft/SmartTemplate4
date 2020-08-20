@@ -53,7 +53,7 @@
 	<script type="application/javascript" src="chrome://smarttemplate4/content/smartTemplate-fileTemplates.js"/>
 
 <script type="text/javascript">
-  SmartTemplate4.startUp();
+  window.SmartTemplate4.startUp();
 	
 	window.setTimeout(function() {
 	  if (window.document.URL.endsWith("messenger.xhtml"))
